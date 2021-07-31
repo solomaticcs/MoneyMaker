@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    id("androidx.navigation.safeargs.kotlin")
 }
 
 android {
@@ -35,6 +36,9 @@ android {
             jvmTarget = "1.8"
         }
     }
+    buildFeatures {
+        viewBinding = true
+    }
 }
 
 dependencies {
@@ -43,6 +47,8 @@ dependencies {
     implementation(Deps.AndroidX.appCompat)
     implementation(Deps.materialDesign)
     implementation(Deps.AndroidX.constraintLayout)
+    implementation(Deps.Navigation.fragmentKtx)
+    implementation(Deps.Navigation.uiKtx)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.AndroidX.testExtJunit)
     androidTestImplementation(Deps.AndroidX.testEspresso)
