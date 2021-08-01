@@ -1,6 +1,7 @@
 plugins {
     id("com.android.application")
     kotlin("android")
+    kotlin("kapt")
     id("androidx.navigation.safeargs.kotlin")
 }
 
@@ -49,6 +50,12 @@ dependencies {
     implementation(Deps.AndroidX.constraintLayout)
     implementation(Deps.Navigation.fragmentKtx)
     implementation(Deps.Navigation.uiKtx)
+    implementation(Deps.Room.runtime)
+    implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
+    kapt(Deps.Room.compiler)
+    implementation(Deps.Room.ktx)
+    implementation(Deps.Koin.core)
+    implementation(Deps.Koin.android)
     testImplementation(Deps.junit)
     androidTestImplementation(Deps.AndroidX.testExtJunit)
     androidTestImplementation(Deps.AndroidX.testEspresso)

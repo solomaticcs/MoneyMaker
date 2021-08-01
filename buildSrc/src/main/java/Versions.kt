@@ -5,8 +5,11 @@ object Versions {
     const val appCompact = "1.3.0"
     const val materialDesign = "1.3.0"
     const val constraintLayout = "2.0.4"
+    const val swipeRefreshLayout = "1.1.0"
     const val navigation = "2.3.5"
     const val junit = "4.13.2"
     const val androidXTestExtJunit = "1.1.3"
     const val androidXTestEspresso = "3.4.0"
+    const val room = "2.3.0"
+    const val koin = "3.1.2"
 }

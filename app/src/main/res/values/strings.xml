@@ -1,3 +1,16 @@
 <resources>
     <string name="app_name">MoneyMaker</string>
+    <string name="submit">Submit</string>
+    <string name="done">Done</string>
+    <string name="format_money">$%1$s</string>
+    <string name="delete_success">Delete id(%1$s) successful!</string>
+    <string name="delete_fail">Delete id(%1$s) fail!</string>
+    <string name="addition_choose_date">Choose date</string>
+    <string name="addition_app_bar_title">Addition</string>
+    <string name="addition_label_date">Date</string>
+    <string name="addition_label_money">Money</string>
+    <string name="addition_label_description">Description</string>
+    <string name="addition_message_money_empty">Money is empty!</string>
+    <string name="addition_message_add_success">Add record success!</string>
+    <string name="addition_message_add_fail">Add record fail!</string>
 </resources>

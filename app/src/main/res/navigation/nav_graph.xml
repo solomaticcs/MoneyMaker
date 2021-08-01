@@ -1,11 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/mainFragment">
+    app:startDestination="@id/recordListFragment">
 
     <fragment
-        android:id="@+id/mainFragment"
-        android:name="com.solomaticydl.moneymaker.ui.main.MainFragment"
-        android:label="@string/app_name" />
+        android:id="@+id/recordListFragment"
+        android:name="com.solomaticydl.moneymaker.ui.main.RecordListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_record_list">
+        <action
+            android:id="@+id/action_recordListFragment_to_additionFragment"
+            app:destination="@id/additionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/additionFragment"
+        android:name="com.solomaticydl.moneymaker.ui.addition.AdditionFragment"
+        android:label="@string/addition_app_bar_title"
+        tools:layout="@layout/fragment_addition" />
 </navigation>
